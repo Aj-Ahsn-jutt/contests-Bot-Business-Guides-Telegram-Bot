@@ -1,0 +1,25 @@
+
+{
+  "name": "bot-business-cli",
+  "version": "1.0.0",
+  "main": "cli.js",
+  "type": "module",
+  "scripts": {
+    "start": "node cli.js",
+    "digest": "node modules/telegram_digest.js",
+    "send-digest": "node modules/telegram_sender.js",
+    "changelog": "node modules/changelog_builder.js",
+    "lesson": "node modules/lesson_generator.js",
+    "commit-msg": "node modules/commit_message_generator.js",
+    "semantic-search": "node modules/semantic_search.js",
+    "cluster-tags": "node modules/tag_clustering.js",
+    "refactor": "node modules/auto_refactor_mode.js",
+    "annotate": "node modules/inline_annotation_engine.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.7.0",
+    "axios": "^1.6.0",
+    "commander": "^10.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
